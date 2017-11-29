@@ -19,6 +19,7 @@ if [[ ! -f "$ZOO_CONF_DIR/zoo.cfg" ]]; then
     echo "tickTime=$ZOO_TICK_TIME" >> "$CONFIG"
     echo "initLimit=$ZOO_INIT_LIMIT" >> "$CONFIG"
     echo "syncLimit=$ZOO_SYNC_LIMIT" >> "$CONFIG"
+	
     echo "autopurge.purgeInterval=1" >> "$CONFIG"
 
     echo "maxClientCnxns=$ZOO_MAX_CLIENT_CNXNS" >> "$CONFIG"
